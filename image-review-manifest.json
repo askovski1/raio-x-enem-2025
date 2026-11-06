@@ -1,0 +1,1082 @@
+{
+  "title": "Auditoria visual do ENEM 2025",
+  "method": "Inspeção visual de todas as páginas com elementos visuais, mais conferência individual dos vínculos e das alternativas ilustradas. Foram excluídos o material em espanhol e as páginas que não são questões de múltipla escolha.",
+  "days": {
+    "1": {
+      "source": "2025_PV_impresso_D1_CD1.pdf",
+      "pdfPagesWithFigures": [
+        {
+          "pdfPage": 3,
+          "questionNumbers": [
+            5
+          ]
+        },
+        {
+          "pdfPage": 8,
+          "questionNumbers": [
+            14
+          ]
+        },
+        {
+          "pdfPage": 9,
+          "questionNumbers": [
+            15
+          ]
+        },
+        {
+          "pdfPage": 11,
+          "questionNumbers": [
+            22,
+            23
+          ]
+        },
+        {
+          "pdfPage": 12,
+          "questionNumbers": [
+            24
+          ]
+        },
+        {
+          "pdfPage": 13,
+          "questionNumbers": [
+            26
+          ]
+        },
+        {
+          "pdfPage": 14,
+          "questionNumbers": [
+            31,
+            33
+          ]
+        },
+        {
+          "pdfPage": 15,
+          "questionNumbers": [
+            34
+          ]
+        },
+        {
+          "pdfPage": 18,
+          "questionNumbers": [
+            41
+          ]
+        },
+        {
+          "pdfPage": 19,
+          "questionNumbers": [
+            45
+          ]
+        },
+        {
+          "pdfPage": 22,
+          "questionNumbers": [
+            47
+          ]
+        },
+        {
+          "pdfPage": 23,
+          "questionNumbers": [
+            49
+          ]
+        },
+        {
+          "pdfPage": 26,
+          "questionNumbers": [
+            63
+          ]
+        },
+        {
+          "pdfPage": 27,
+          "questionNumbers": [
+            68
+          ]
+        },
+        {
+          "pdfPage": 29,
+          "questionNumbers": [
+            77
+          ]
+        }
+      ],
+      "questionCountWithVisuals": 17,
+      "questions": [
+        {
+          "number": 5,
+          "pdfPage": 3,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q005-p03-Im0.jpeg",
+              "alt": "Material visual da questão 5, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 14,
+          "pdfPage": 8,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q014-p08-Im0.jpeg",
+              "alt": "Material visual da questão 14, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 15,
+          "pdfPage": 9,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q015-p09-Im0.jpeg",
+              "alt": "Material visual da questão 15, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 22,
+          "pdfPage": 11,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q022-p11-Im0.jpeg",
+              "alt": "Material visual da questão 22, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 23,
+          "pdfPage": 11,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q023-p11-Im1.jpeg",
+              "alt": "Material visual da questão 23, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 24,
+          "pdfPage": 12,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q024-p12-Im0.jpeg",
+              "alt": "Material visual da questão 24, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 26,
+          "pdfPage": 13,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q026-p13-Im0.jpeg",
+              "alt": "Material visual da questão 26, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 31,
+          "pdfPage": 14,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q031-p14-Im0.jpeg",
+              "alt": "Material visual da questão 31, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 33,
+          "pdfPage": 14,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q033-p14-Im1.jpeg",
+              "alt": "Material visual da questão 33, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 34,
+          "pdfPage": 15,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q034-p15-Im0.jpeg",
+              "alt": "Material visual da questão 34, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 41,
+          "pdfPage": 18,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q041-p18-Im0.jpeg",
+              "alt": "Material visual da questão 41, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 45,
+          "pdfPage": 19,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q045-p19-Im0.jpeg",
+              "alt": "Material visual da questão 45, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 47,
+          "pdfPage": 22,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q047-p22-Im0.jpeg",
+              "alt": "Material visual da questão 47, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 49,
+          "pdfPage": 23,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q049-p23-Im0.jpeg",
+              "alt": "Material visual da questão 49, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 63,
+          "pdfPage": 26,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q063-p26-Im0.jpeg",
+              "alt": "Material visual da questão 63, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 68,
+          "pdfPage": 27,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q068-p27-Im0.jpeg",
+              "alt": "Material visual da questão 68, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 77,
+          "pdfPage": 29,
+          "promptImages": [
+            {
+              "src": "/assets/d1-q077-p29-Im0.jpeg",
+              "alt": "Material visual da questão 77, extraído do caderno do 1º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        }
+      ]
+    },
+    "2": {
+      "source": "2025_PV_impresso_D2_CD6.pdf",
+      "pdfPagesWithFigures": [
+        {
+          "pdfPage": 3,
+          "questionNumbers": [
+            99
+          ]
+        },
+        {
+          "pdfPage": 4,
+          "questionNumbers": [
+            101,
+            102
+          ]
+        },
+        {
+          "pdfPage": 5,
+          "questionNumbers": [
+            103,
+            105
+          ]
+        },
+        {
+          "pdfPage": 6,
+          "questionNumbers": [
+            107,
+            108
+          ]
+        },
+        {
+          "pdfPage": 7,
+          "questionNumbers": [
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "pdfPage": 8,
+          "questionNumbers": [
+            112,
+            114
+          ]
+        },
+        {
+          "pdfPage": 9,
+          "questionNumbers": [
+            116
+          ]
+        },
+        {
+          "pdfPage": 10,
+          "questionNumbers": [
+            121
+          ]
+        },
+        {
+          "pdfPage": 11,
+          "questionNumbers": [
+            125
+          ]
+        },
+        {
+          "pdfPage": 12,
+          "questionNumbers": [
+            126
+          ]
+        },
+        {
+          "pdfPage": 13,
+          "questionNumbers": [
+            127,
+            128
+          ]
+        },
+        {
+          "pdfPage": 14,
+          "questionNumbers": [
+            129,
+            132
+          ]
+        },
+        {
+          "pdfPage": 15,
+          "questionNumbers": [
+            133,
+            134,
+            135
+          ]
+        },
+        {
+          "pdfPage": 16,
+          "questionNumbers": [
+            136,
+            138
+          ]
+        },
+        {
+          "pdfPage": 17,
+          "questionNumbers": [
+            140
+          ]
+        },
+        {
+          "pdfPage": 18,
+          "questionNumbers": [
+            142
+          ]
+        },
+        {
+          "pdfPage": 19,
+          "questionNumbers": [
+            143,
+            146
+          ]
+        },
+        {
+          "pdfPage": 20,
+          "questionNumbers": [
+            147,
+            149
+          ]
+        },
+        {
+          "pdfPage": 21,
+          "questionNumbers": [
+            151,
+            152
+          ]
+        },
+        {
+          "pdfPage": 22,
+          "questionNumbers": [
+            153,
+            154
+          ]
+        },
+        {
+          "pdfPage": 23,
+          "questionNumbers": [
+            155,
+            156
+          ]
+        },
+        {
+          "pdfPage": 24,
+          "questionNumbers": [
+            158,
+            159
+          ]
+        },
+        {
+          "pdfPage": 25,
+          "questionNumbers": [
+            161
+          ]
+        },
+        {
+          "pdfPage": 26,
+          "questionNumbers": [
+            165,
+            166
+          ]
+        },
+        {
+          "pdfPage": 27,
+          "questionNumbers": [
+            167
+          ]
+        },
+        {
+          "pdfPage": 28,
+          "questionNumbers": [
+            170
+          ]
+        },
+        {
+          "pdfPage": 29,
+          "questionNumbers": [
+            171
+          ]
+        },
+        {
+          "pdfPage": 30,
+          "questionNumbers": [
+            175,
+            178
+          ]
+        },
+        {
+          "pdfPage": 31,
+          "questionNumbers": [
+            179,
+            180
+          ]
+        }
+      ],
+      "questionCountWithVisuals": 49,
+      "questions": [
+        {
+          "number": 99,
+          "pdfPage": 3,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q099-p03-Im0.jpeg",
+              "alt": "Material visual da questão 99, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 101,
+          "pdfPage": 4,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q101-p04-Im0.png",
+              "alt": "Material visual da questão 101, extraído do caderno do 2º dia",
+              "caption": "Figura do enunciado"
+            }
+          ],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q101-p04-Im1.jpeg",
+            "B": "/assets/d2-q101-p04-Im2.jpeg",
+            "C": "/assets/d2-q101-p04-Im3.jpeg",
+            "D": "/assets/d2-q101-p04-Im4.jpeg",
+            "E": "/assets/d2-q101-p04-Im5.jpeg"
+          }
+        },
+        {
+          "number": 102,
+          "pdfPage": 4,
+          "promptImages": [],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q102-p04-Im6.png",
+            "B": "/assets/d2-q102-p04-Im7.png",
+            "C": "/assets/d2-q102-p04-Im8.png",
+            "D": "/assets/d2-q102-p04-Im9.png",
+            "E": "/assets/d2-q102-p04-Im10.png"
+          }
+        },
+        {
+          "number": 103,
+          "pdfPage": 5,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q103-p05-Im0.png",
+              "alt": "Material visual da questão 103, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 105,
+          "pdfPage": 5,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q105-p05-Im1.jpeg",
+              "alt": "Material visual da questão 105, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 107,
+          "pdfPage": 6,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q107-p06-Im0.jpeg",
+              "alt": "Material visual da questão 107, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 108,
+          "pdfPage": 6,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q108-p06-Im1.jpeg",
+              "alt": "Material visual da questão 108, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 109,
+          "pdfPage": 7,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q109-p07-Im0.png",
+              "alt": "Material visual da questão 109, extraído do caderno do 2º dia"
+            },
+            {
+              "src": "/assets/d2-q109-p07-Im1.png",
+              "alt": "Material visual da questão 109, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 110,
+          "pdfPage": 7,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q110-p07-Im2.png",
+              "alt": "Material visual da questão 110, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 111,
+          "pdfPage": 7,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q111-p07-Im3.png",
+              "alt": "Material visual da questão 111, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 112,
+          "pdfPage": 8,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q112-p08-Im0.jpeg",
+              "alt": "Material visual da questão 112, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 114,
+          "pdfPage": 8,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q114-p08-Im1.jpeg",
+              "alt": "Material visual da questão 114, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 116,
+          "pdfPage": 9,
+          "promptImages": [],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q116-p09-Im0.png",
+            "B": "/assets/d2-q116-p09-Im1.png",
+            "C": "/assets/d2-q116-p09-Im2.png",
+            "D": "/assets/d2-q116-p09-Im3.png",
+            "E": "/assets/d2-q116-p09-Im4.png"
+          }
+        },
+        {
+          "number": 121,
+          "pdfPage": 10,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q121-p10-Im0.jpeg",
+              "alt": "Material visual da questão 121, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 125,
+          "pdfPage": 11,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q125-p11-Im0.png",
+              "alt": "Material visual da questão 125, extraído do caderno do 2º dia",
+              "caption": "Figura do enunciado"
+            }
+          ],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q125-p11-Im1.png",
+            "B": "/assets/d2-q125-p11-Im2.png",
+            "C": "/assets/d2-q125-p11-Im3.png",
+            "D": "/assets/d2-q125-p11-Im4.png",
+            "E": "/assets/d2-q125-p11-Im5.png"
+          }
+        },
+        {
+          "number": 126,
+          "pdfPage": 12,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q126-p12-Im0.jpeg",
+              "alt": "Material visual da questão 126, extraído do caderno do 2º dia",
+              "caption": "Figura do enunciado"
+            }
+          ],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q126-p12-Im1.png",
+            "B": "/assets/d2-q126-p12-Im2.png",
+            "C": "/assets/d2-q126-p12-Im3.png",
+            "D": "/assets/d2-q126-p12-Im4.png",
+            "E": "/assets/d2-q126-p12-Im5.png"
+          }
+        },
+        {
+          "number": 127,
+          "pdfPage": 13,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q127-p13-Im0.jpeg",
+              "alt": "Material visual da questão 127, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 128,
+          "pdfPage": 13,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q128-p13-Im1.png",
+              "alt": "Material visual da questão 128, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 129,
+          "pdfPage": 14,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q129-p14-Im0.png",
+              "alt": "Material visual da questão 129, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 132,
+          "pdfPage": 14,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q132-p14-Im1.jpeg",
+              "alt": "Material visual da questão 132, extraído do caderno do 2º dia"
+            },
+            {
+              "src": "/assets/d2-q132-p14-visual.png",
+              "alt": "Tabela do enunciado da questão 132"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 133,
+          "pdfPage": 15,
+          "promptImages": [],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q133-p15-Im0.png",
+            "B": "/assets/d2-q133-p15-Im1.png",
+            "C": "/assets/d2-q133-p15-Im2.png",
+            "D": "/assets/d2-q133-p15-Im3.png",
+            "E": "/assets/d2-q133-p15-Im4.png"
+          }
+        },
+        {
+          "number": 134,
+          "pdfPage": 15,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q134-p15-Im5.jpeg",
+              "alt": "Material visual da questão 134, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 135,
+          "pdfPage": 15,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q135-p15-visual.png",
+              "alt": "Tabela do enunciado da questão 135"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 136,
+          "pdfPage": 16,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q136-p16-Im0.jpeg",
+              "alt": "Material visual da questão 136, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 138,
+          "pdfPage": 16,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q138-p16-Im1.jpeg",
+              "alt": "Material visual da questão 138, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 140,
+          "pdfPage": 17,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q140-p17-Im0.png",
+              "alt": "Material visual da questão 140, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 142,
+          "pdfPage": 18,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q142-p18-Im0.jpeg",
+              "alt": "Material visual da questão 142, extraído do caderno do 2º dia",
+              "caption": "Figura do enunciado"
+            }
+          ],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q142-p18-Im1.jpeg",
+            "B": "/assets/d2-q142-p18-Im2.jpeg",
+            "C": "/assets/d2-q142-p18-Im3.jpeg",
+            "D": "/assets/d2-q142-p18-Im4.jpeg",
+            "E": "/assets/d2-q142-p18-Im5.jpeg"
+          }
+        },
+        {
+          "number": 143,
+          "pdfPage": 19,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q143-p19-Im0.jpeg",
+              "alt": "Material visual da questão 143, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 146,
+          "pdfPage": 19,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q146-p19-visual.png",
+              "alt": "Tabela do enunciado da questão 146"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 147,
+          "pdfPage": 20,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q147-p20-Im0.jpeg",
+              "alt": "Material visual da questão 147, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 149,
+          "pdfPage": 20,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q149-p20-Im1.jpeg",
+              "alt": "Material visual da questão 149, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 151,
+          "pdfPage": 21,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q151-p21-Im0.jpeg",
+              "alt": "Material visual da questão 151, extraído do caderno do 2º dia"
+            },
+            {
+              "src": "/assets/d2-q151-p21-Im1.png",
+              "alt": "Material visual da questão 151, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 152,
+          "pdfPage": 21,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q152-p21-visual.png",
+              "alt": "Figuras do enunciado da questão 152"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 153,
+          "pdfPage": 22,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q153-p22-Im0.jpeg",
+              "alt": "Material visual da questão 153, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 154,
+          "pdfPage": 22,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q154-p22-Im1.jpeg",
+              "alt": "Material visual da questão 154, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 155,
+          "pdfPage": 23,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q155-p23-Im0.jpeg",
+              "alt": "Material visual da questão 155, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 156,
+          "pdfPage": 23,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q156-p23-Im1.png",
+              "alt": "Material visual da questão 156, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 158,
+          "pdfPage": 24,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q158-p24-visual.png",
+              "alt": "Tabela do enunciado da questão 158"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 159,
+          "pdfPage": 24,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q159-p24-Im0.jpeg",
+              "alt": "Material visual da questão 159, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 161,
+          "pdfPage": 25,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q161-p25-Im0.jpeg",
+              "alt": "Material visual da questão 161, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 165,
+          "pdfPage": 26,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q165-p26-Im0.jpeg",
+              "alt": "Material visual da questão 165, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 166,
+          "pdfPage": 26,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q166-p26-Im1.jpeg",
+              "alt": "Material visual da questão 166, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 167,
+          "pdfPage": 27,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q167-p27-Im0.jpeg",
+              "alt": "Material visual da questão 167, extraído do caderno do 2º dia"
+            },
+            {
+              "src": "/assets/d2-q167-p27-Im1.jpeg",
+              "alt": "Material visual da questão 167, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 170,
+          "pdfPage": 28,
+          "promptImages": [],
+          "illustratedAlternatives": {
+            "A": "/assets/d2-q170-p28-Im0.jpeg",
+            "B": "/assets/d2-q170-p28-Im1.jpeg",
+            "C": "/assets/d2-q170-p28-Im2.jpeg",
+            "D": "/assets/d2-q170-p28-Im3.jpeg",
+            "E": "/assets/d2-q170-p28-Im4.jpeg"
+          }
+        },
+        {
+          "number": 171,
+          "pdfPage": 29,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q171-p29-Im0.jpeg",
+              "alt": "Material visual da questão 171, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 175,
+          "pdfPage": 30,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q175-p30-Im0.jpeg",
+              "alt": "Material visual da questão 175, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 178,
+          "pdfPage": 30,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q178-p30-Im1.jpeg",
+              "alt": "Material visual da questão 178, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 179,
+          "pdfPage": 31,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q179-p31-Im0.png",
+              "alt": "Material visual da questão 179, extraído do caderno do 2º dia"
+            }
+          ],
+          "illustratedAlternatives": {}
+        },
+        {
+          "number": 180,
+          "pdfPage": 31,
+          "promptImages": [
+            {
+              "src": "/assets/d2-q180-p31-visual.png",
+              "alt": "Tabela do enunciado da questão 180"
+            }
+          ],
+          "illustratedAlternatives": {}
+        }
+      ]
+    }
+  }
+}

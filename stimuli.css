@@ -1,0 +1,7 @@
+.shared-stimulus{margin:0 0 20px;padding:20px 22px;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:14px;background:var(--surface-2)}
+.shared-stimulus[hidden]{display:none}
+.shared-kicker{color:var(--gold);font-size:9px;letter-spacing:.14em;font-weight:700}
+.shared-stimulus h3{font:700 20px Manrope,sans-serif;margin:8px 0 4px}
+.shared-subtitle{font:italic 12px/1.5 'DM Sans',sans-serif;color:var(--muted);margin:0 0 15px}
+.shared-body{font:400 12px/1.7 'DM Sans',sans-serif;white-space:pre-wrap;overflow-wrap:anywhere}
+.shared-citation{font-size:10px;text-align:right;color:var(--muted);margin:12px 0 0}
