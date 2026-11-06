@@ -1,5 +1,13 @@
 # Simulado ENEM 2025
 
+## Publicar na web
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Faskovski1%2Fraio-x-enem-2025)
+
+Clique no botão, conecte sua conta GitHub ao Render e aprove a criação do serviço. O Render compila e inicia o servidor Node; ao concluir, use a URL `onrender.com` exibida no painel. O arquivo `render.yaml` configura o serviço e sua verificação de saúde. Para evitar implantações sem sua aprovação em cada conta que usar o botão, as novas versões devem ser implantadas pelo painel do Render.
+
+O GitHub Pages sozinho não executa o endpoint `/api/answer`, necessário para carregar e corrigir as questões.
+
 ## Executar
 
 Com Node.js 20 ou superior, abra um terminal nesta pasta e execute:
@@ -10,7 +18,7 @@ npm start
 
 Depois acesse `http://127.0.0.1:4173`. Também é possível iniciar com `node server.mjs`. Para usar outra porta, defina a variável `PORT`.
 
-Para publicar o simulador, use uma hospedagem que execute aplicações Node.js. O GitHub Pages não executa o endpoint `/api/answer` usado para validar as respostas.
+Para publicar o simulador em outra hospedagem, use um serviço que execute aplicações Node.js.
 
 ## Arquivos
 

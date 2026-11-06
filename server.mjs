@@ -11,6 +11,7 @@ const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8',
 function json(res,status,data){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(JSON.stringify(data))}
 const server=http.createServer(async(req,res)=>{
   const url=new URL(req.url,'http://localhost');
+  if(req.method==='GET'&&url.pathname==='/health')return json(res,200,{status:'ok'});
   if(req.method==='GET'&&url.pathname==='/api/questions')return json(res,200,{questions,stimuli});
   if(req.method==='POST'&&url.pathname==='/api/answer'){
     let body='';for await(const chunk of req){body+=chunk;if(body.length>2048)return json(res,413,{error:'Solicitação muito grande.'})}

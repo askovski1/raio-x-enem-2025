@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: raio-x-enem-2025
+    runtime: node
+    plan: free
+    region: virginia
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeployTrigger: off
