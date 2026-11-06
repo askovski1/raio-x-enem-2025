@@ -46,7 +46,7 @@ Você recebe uma leitura completa do texto:
 - Sua redação **só é enviada depois que você marca o consentimento**.
 - O site **não guarda** o texto enviado. O rascunho fica apenas no seu navegador.
 - A correção é feita pelo Google (Gemini). No plano gratuito, o Google pode usar o conteúdo enviado para melhorar seus produtos, então **não coloque dados pessoais** na redação.
-- Para evitar abuso, há um limite de avaliações por pessoa em um intervalo de tempo.
+- Para evitar abuso, há um limite de avaliações por pessoa em um intervalo de tempo. -Removido
 
 ## 🩺 Aviso sobre o material
 
