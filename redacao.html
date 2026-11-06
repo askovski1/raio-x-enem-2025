@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f0">
+  <meta name="description" content="Treine redação do ENEM com temas, textos de apoio e avaliação orientativa por inteligência artificial nas cinco competências.">
+  <title>Treino de redação — ENEM 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/brand.css">
+  <link rel="stylesheet" href="/redacao.css">
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Página inicial do simulado"><span class="brand-mark">e</span><span>estuda<span class="brand-dot">.</span></span></a>
+    <div class="top-actions"><nav class="site-nav" aria-label="Seções do site"><a class="site-nav-link" href="/">Questões</a><a class="site-nav-link active" href="/redacao" aria-current="page">Redação</a></nav><span class="edition">ENEM <b>2025</b></span><button id="themeToggle" class="icon-button" aria-label="Alternar tema" title="Alternar tema"><span id="themeGlyph">◐</span></button></div>
+  </header>
+  <main class="essay-shell">
+    <section class="essay-hero"><div><p class="eyebrow"><span class="live-dot"></span> OFICINA DE REDAÇÃO</p><h1>Escreva. Revise.<br><em>Evolua.</em></h1><p class="intro-copy">Treine com propostas no estilo ENEM e receba uma leitura detalhada, competência por competência.</p></div><div class="essay-seal" aria-hidden="true"><span>5</span><small>COMPETÊNCIAS</small></div></section>
+    <section class="essay-layout">
+      <div class="essay-main">
+        <section class="essay-card topic-card" aria-labelledby="topicTitle">
+          <div class="essay-section-head"><div><p class="side-eyebrow">ESCOLHA SUA PROPOSTA</p><h2>Um tema para começar</h2></div><span class="topic-count" id="topicCount">7 temas</span></div>
+          <div class="topic-tabs" role="tablist" aria-label="Tipo de tema"><button type="button" class="topic-tab active" data-filter="official" role="tab" aria-selected="true">Tema oficial 2025</button><button type="button" class="topic-tab" data-filter="practice" role="tab" aria-selected="false">Possibilidades 2026</button></div>
+          <div id="themeList" class="theme-list" aria-label="Temas disponíveis"></div>
+          <div class="selected-topic"><div class="selected-topic-top"><span id="themeYear" class="theme-year"></span><span class="theme-label" id="themeLabel"></span></div><h3 id="topicTitle"></h3><p id="topicPrompt" class="topic-prompt"></p><div id="sourceLinks" class="source-links"></div></div>
+        </section>
+
+        <section class="essay-card support-card" aria-labelledby="supportHeading">
+          <div class="essay-section-head"><div><p class="side-eyebrow">LEITURA DE APOIO</p><h2 id="supportHeading">Textos motivadores</h2></div><span class="reading-chip">ENEM 2025</span></div>
+          <p class="support-intro">Resumos didáticos dos seis materiais da proposta oficial. Abra o caderno do Inep para consultar os textos e elementos visuais na íntegra.</p>
+          <div id="materials" class="materials-grid"></div>
+          <p id="noMaterials" class="no-materials" hidden>Esta é uma proposta de treino. Não há textos oficiais associados a ela; pesquise o tema em fontes confiáveis e construa repertório próprio.</p>
+          <a id="officialSource" class="source-button" target="_blank" rel="noopener noreferrer" href="#"><span aria-hidden="true">↗</span> Abrir proposta oficial completa</a>
+        </section>
+
+        <section class="essay-card composer-card" aria-labelledby="writeHeading">
+          <div class="essay-section-head"><div><p class="side-eyebrow">MÃO À OBRA</p><h2 id="writeHeading">Sua redação</h2></div><span class="draft-state" id="draftState">Rascunho salvo neste dispositivo</span></div>
+          <label class="essay-label" for="essayText">Texto dissertativo-argumentativo</label>
+          <textarea id="essayText" maxlength="12000" placeholder="Apresente seu ponto de vista, desenvolva os argumentos em parágrafos e conclua com uma proposta de intervenção detalhada..." spellcheck="true" lang="pt-BR"></textarea>
+          <div class="writing-meta"><span id="wordCount">0 palavras</span><span id="charCount">0 / 12.000 caracteres</span></div>
+          <div class="consent-box"><input type="checkbox" id="consent"><label for="consent">Entendo que, ao enviar, meu texto será transmitido pelo servidor à OpenAI para gerar a avaliação. O site não mantém cópia enviada. O rascunho atual fica salvo somente neste navegador.</label></div>
+          <div class="composer-actions"><button id="clearDraft" class="quiet-button" type="button">Limpar rascunho</button><button id="submitEssay" class="next-button essay-submit" type="button" disabled>Enviar para avaliação <span aria-hidden="true">→</span></button></div>
+          <p id="submitStatus" class="submit-status" role="status" aria-live="polite"></p>
+        </section>
+        <section id="resultCard" class="essay-card result-card" aria-labelledby="resultHeading" hidden></section>
+      </div>
+      <aside class="essay-side">
+        <section class="essay-card guide-card"><p class="side-eyebrow">COMO SERÁ LIDA</p><h2>As cinco competências</h2><ol class="competency-list"><li><span>I</span><div><b>Escrita formal</b><small>Gramática e convenções da escrita</small></div></li><li><span>II</span><div><b>Compreensão do tema</b><small>Recorte, gênero e repertório</small></div></li><li><span>III</span><div><b>Projeto argumentativo</b><small>Seleção e desenvolvimento de ideias</small></div></li><li><span>IV</span><div><b>Coesão</b><small>Articulação entre frases e parágrafos</small></div></li><li><span>V</span><div><b>Intervenção</b><small>Ação que respeite os direitos humanos</small></div></li></ol><div class="score-note"><strong>0–1.000 pontos</strong><span>Cada competência vale até 200 pontos, em faixas de 40. A IA produz uma estimativa de estudo; não é uma nota oficial do Inep.</span></div><a class="rubric-link" href="https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/redacao-do-enem-2025-cartilha-do-a-participante/" target="_blank" rel="noopener noreferrer">Consultar a Cartilha do Participante ↗</a></section>
+        <section class="essay-card privacy-card"><span class="privacy-icon" aria-hidden="true">⌁</span><div><b>Privacidade em primeiro lugar</b><p>A redação só é enviada depois da sua autorização. O servidor não armazena o texto após a resposta da IA.</p></div></section>
+      </aside>
+    </section>
+    <footer class="page-footer"><span>ENEM 2025 <i>·</i> Oficina de redação</span><a href="/">Voltar ao simulado</a></footer>
+  </main>
+  <script src="/redacao.js" defer></script>
+</body>
+</html>
+
