@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: questoesenem2025
+    name: raio-x-enem-2025
     runtime: node
     plan: free
     region: virginia
