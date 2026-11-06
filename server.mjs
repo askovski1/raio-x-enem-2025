@@ -50,4 +50,36 @@ const server=http.createServer(async(req,res)=>{
           const left=deadline-Date.now();if(left<5000)break;
           let r;
           try{r=await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,{method:'POST',headers:{'x-goog-api-key':process.env.GEMINI_API_KEY,'Content-Type':'application/json'},signal:AbortSignal.timeout(Math.min(45000,left)),body:requestBody})}
-          catch(error){console.error('Gemini falha',model,error?.name);lastStatus=504;con
+          catch(error){console.error('Gemini falha',model,error?.name);lastStatus=504;continue}
+          if(r.ok){apiResponse=r;console.log('Gemini ok',model);break}
+          lastStatus=r.status;
+          console.error('Gemini erro',model,r.status,(await r.text()).slice(0,400));
+          if(![429,500,503].includes(r.status))break;
+          await new Promise(done=>setTimeout(done,1500));
+        }
+        if(apiResponse)break;
+      }
+      if(!apiResponse){
+        const busy=lastStatus===429||lastStatus===503;
+        return json(res,busy?503:(lastStatus===504?504:502),{error:busy?'O serviço de avaliação está temporariamente ocupado. Tente novamente em instantes.':(lastStatus===504?'A avaliação demorou mais que o esperado. Tente novamente.':'Não foi possível concluir a avaliação agora. Tente novamente mais tarde.')});
+      }
+      const payload=await apiResponse.json();
+      const parts=(payload.candidates?.[0]?.content?.parts||[]).map(part=>part.text||'').filter(Boolean);
+      let result;
+      for(const candidate of [parts.join(''),...parts]){try{const clean=candidate.replace(/```json|```/g,'').trim();result=JSON.parse(clean.slice(clean.indexOf('{'),clean.lastIndexOf('}')+1));break}catch{}}
+      if(!result)return json(res,502,{error:'Não foi possível interpretar a avaliação. Tente novamente.'});
+      if(!Array.isArray(result.competencies)||result.competencies.length!==5||!Array.isArray(result.strengths)||!Array.isArray(result.priorities)||typeof result.summary!=='string'||typeof result.interventionReview!=='string')return json(res,502,{error:'A avaliação retornou um formato incompleto. Tente novamente.'});
+      const scores=result.competencies.map(item=>Number(item.score));
+      if(new Set(result.competencies.map(item=>item.competency)).size!==5||scores.some(score=>!scoreBands.includes(score)))return json(res,502,{error:'A avaliação retornou um formato incompleto. Tente novamente.'});
+      return json(res,200,result);
+    }catch(error){console.error('Erro avaliação',error);if(error?.name==='TimeoutError')return json(res,504,{error:'A avaliação demorou mais que o esperado. Tente novamente.'});return json(res,502,{error:'Não foi possível interpretar a avaliação. Tente novamente.'})}
+  }
+  if(req.method==='POST'&&url.pathname==='/api/answer'){
+    let body='';for await(const chunk of req){body+=chunk;if(body.length>2048)return json(res,413,{error:'Solicitação muito grande.'})}
+    try{const input=JSON.parse(body);const day=Number(input.day),number=Number(input.number),answer=String(input.answer||'').toUpperCase(),language=input.language==='es'?'es':'en';if(![1,2].includes(day)||!Number.isInteger(number)||number<(day===1?1:91)||number>(day===1?90:180)||!['A','B','C','D','E'].includes(answer))return json(res,400,{error:'Resposta inválida.'});const record=privateKeys[`D${day}`]?.answers?.[number];if(!record)return json(res,404,{error:'Gabarito não encontrado para esta questão.'});const correctAnswer=typeof record==='string'?record:record.idiomas?.[language];if(!correctAnswer)return json(res,404,{error:'Gabarito do idioma não encontrado.'});return json(res,200,{correct:correctAnswer==='Anulado'||answer===correctAnswer,correctAnswer,annulled:correctAnswer==='Anulado'})}catch{return json(res,400,{error:'Não foi possível interpretar a resposta.'})}
+  }
+  if(req.method!=='GET'&&req.method!=='HEAD'){res.writeHead(405);return res.end('Method not allowed')}
+  let pathname=decodeURIComponent(url.pathname);if(pathname==='/')pathname='/index.html';if(pathname==='/redacao')pathname='/redacao.html';if(pathname.startsWith('/server-private/')){res.writeHead(404);return res.end('Not found')}const file=path.resolve(root,'.'+pathname);if(!file.startsWith(root+path.sep)){res.writeHead(403);return res.end('Forbidden')}
+  try{const data=await readFile(file);res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','X-Content-Type-Options':'nosniff','Cache-Control':'no-cache'});return req.method==='HEAD'?res.end():res.end(data)}catch{res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'});res.end('Not found')}
+});
+const port=Number(process.env.PORT)||4173;const host=process.env.HOST||'0.0.0.0';server.listen(port,host,()=>console.log(`ENEM 2025 disponível na porta ${port}`));
