@@ -26,9 +26,18 @@ Para publicar o simulador em outra hospedagem, use um serviço que execute aplic
 - `assets/`: 121 imagens locais extraídas ou recortadas dos PDFs oficiais, com figuras, gráficos, tabelas e alternativas ilustradas. A revisão visual encontrou materiais em 17 questões do Dia 1 e 49 do Dia 2.
 - `image-review-manifest.json`: registro das páginas revisadas e das questões com material visual.
 - `server-private/answer-keys.json`: gabaritos oficiais usados exclusivamente pelo servidor.
-- `server.mjs`: servidor de arquivos e endpoint de correção (`POST /api/answer`).
+- `essay-themes.json`: tema oficial de 2025, resumos didáticos dos seis textos motivadores e propostas de treino para 2026 com links às fontes.
+- `server.mjs`: servidor de arquivos, endpoint de correção (`POST /api/answer`) e avaliação de redação (`POST /api/essay/evaluate`).
 - `index.html`, `styles.css` e `app.js`: interface responsiva em português, temas claro/escuro, progresso local e confirmação explícita antes de corrigir cada resposta.
+- `redacao.html`, `redacao.css` e `redacao.js`: oficina de redação, rascunho local, consentimento de envio e devolutiva estruturada nas cinco competências.
+
+## Ativar avaliação de redação por IA
+
+A avaliação exige uma chave da API da OpenAI, mantida somente como variável secreta no servidor. No Render, abra o serviço `questoesenem2025`, acesse **Environment** e adicione `OPENAI_API_KEY`. Opcionalmente, defina `OPENAI_MODEL` para escolher outro modelo compatível; o padrão é `gpt-6.1-terra`. Salve e aguarde o novo deploy. Nunca coloque a chave nos arquivos do site, no GitHub ou no navegador. As chamadas consomem créditos da API conforme o uso. Sem a chave, a oficina e os temas funcionam, mas a avaliação permanece desativada.
+
+Cada envio exige consentimento explícito, é enviado do servidor ao provedor de IA e não é persistido pelo aplicativo. O rascunho fica apenas no armazenamento local do navegador. A correção é uma estimativa orientativa: não representa uma nota oficial nem substitui os dois avaliadores humanos do Inep. O endpoint limita o tamanho da redação e a frequência de avaliações por endereço de rede.
 
 ## Limite do material transcrito
 
 O texto OCR recebido para o Dia 1 substitui a extração truncada anterior; os anexos que ficaram disponíveis nesta sessão eram cópias do caderno azul. O gabarito do Dia 2 foi comparado com os 90 valores colados pelo usuário e não apresentou divergências. As páginas com material visual dos dois cadernos foram revisadas e seus elementos foram vinculados às questões correspondentes. A parte em espanhol do Dia 1 foi excluída, conforme solicitado. O OCR ainda pode conter erros de transcrição; o simulador não inventa alternativas nem imagens para preencher lacunas.
+
