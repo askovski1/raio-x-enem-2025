@@ -43,7 +43,7 @@
           <label class="essay-label" for="essayText">Texto dissertativo-argumentativo</label>
           <textarea id="essayText" maxlength="12000" placeholder="Apresente seu ponto de vista, desenvolva os argumentos em parágrafos e conclua com uma proposta de intervenção detalhada..." spellcheck="true" lang="pt-BR"></textarea>
           <div class="writing-meta"><span id="wordCount">0 palavras</span><span id="charCount">0 / 12.000 caracteres</span></div>
-          <div class="consent-box"><input type="checkbox" id="consent"><label for="consent">Entendo que, ao enviar, meu texto será transmitido pelo servidor à OpenAI para gerar a avaliação. O site não mantém cópia enviada. O rascunho atual fica salvo somente neste navegador.</label></div>
+          <div class="consent-box"><input type="checkbox" id="consent"><label for="consent">Entendo que, ao enviar, meu texto será transmitido pelo servidor ao Google (Gemini) para gerar a avaliação. O site não mantém cópia enviada, mas, no plano gratuito, o Google pode usar o conteúdo enviado para melhorar seus produtos; por isso, não inclua dados pessoais na redação. O rascunho atual fica salvo somente neste navegador.</label></div>
           <div class="composer-actions"><button id="clearDraft" class="quiet-button" type="button">Limpar rascunho</button><button id="submitEssay" class="next-button essay-submit" type="button" disabled>Enviar para avaliação <span aria-hidden="true">→</span></button></div>
           <p id="submitStatus" class="submit-status" role="status" aria-live="polite"></p>
         </section>
@@ -59,4 +59,3 @@
   <script src="/redacao.js" defer></script>
 </body>
 </html>
-
