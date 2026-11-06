@@ -1,0 +1,80 @@
+{
+  "officialSource": {
+    "title": "Prova oficial do ENEM 2025 — 1º dia",
+    "url": "https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf",
+    "cartilha": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/redacao-do-enem-2025-cartilha-do-a-participante/"
+  },
+  "themes": [
+    {
+      "id": "enem-2025",
+      "year": "ENEM 2025 · tema oficial",
+      "title": "Perspectivas acerca do envelhecimento na sociedade brasileira",
+      "prompt": "Escreva um texto dissertativo-argumentativo sobre o tema, em modalidade escrita formal, defendendo um ponto de vista com argumentos organizados e uma proposta de intervenção que respeite os direitos humanos.",
+      "label": "Tema oficial",
+      "materials": [
+        {"title":"Texto motivador 1 · envelhecimento demográfico","summary":"Dados do Censo 2022 mostram o crescimento da população com 65 anos ou mais em relação a 2010 e a redução proporcional das crianças de até 14 anos, indicando uma mudança na estrutura etária do país."},
+        {"title":"Texto motivador 2 · representação visual","summary":"A campanha propõe trocar o pictograma tradicional de uma pessoa idosa curvada e com bengala por uma figura ereta acompanhada da marca 60+, questionando estereótipos sobre a velhice.","visual":"Comparação descrita na prova: pictograma tradicional e nova representação 60+."},
+        {"title":"Texto motivador 3 · autonomia e velhice","summary":"Reflexões de Rita Lee e Fernanda Montenegro apresentam a velhice como uma etapa plural, com liberdade, escolhas e dignidade, em vez de reduzi-la a doença ou encerramento da vida."},
+        {"title":"Texto motivador 4 · renda e desigualdade","summary":"O material problematiza a imagem do idoso sempre ativo e saudável e apresenta dados de lares chefiados por pessoas de 65 a 74 anos: 34% ajudam nas despesas, 38% são a principal renda com outras fontes e 28% sustentam a casa sozinhas."},
+        {"title":"Texto motivador 5 · isolamento social","summary":"Trecho literário de Clarice Lispector retrata uma mulher idosa que enfrenta solidão, falta de atividades e a sensação de ser considerada sem utilidade pela família e pela sociedade."},
+        {"title":"Texto motivador 6 · longevidade e desigualdade","summary":"A apresentação de um documentário e a fala de um especialista relacionam o direito a viver mais e com qualidade às desigualdades acumuladas, com destaque para os efeitos do racismo."}
+      ],
+      "sources": [{"label":"Caderno oficial com a proposta e os seis textos motivadores","url":"https://download.inep.gov.br/enem/provas_e_gabaritos/2025_PV_impresso_D1_CD1.pdf"}]
+    },
+    {
+      "id": "infancia-digital",
+      "year": "Treino · possibilidade para 2026",
+      "title": "Desafios para a proteção de crianças e adolescentes no ambiente digital brasileiro",
+      "prompt": "Discuta como garantir um desenvolvimento seguro e saudável para crianças e adolescentes conectados, considerando responsabilidades públicas, familiares, escolares e das plataformas.",
+      "label": "Aposta de preparação · não oficial",
+      "materials": [],
+      "sources": [{"label":"CNN Brasil · eixos de preparação sugeridos por especialista","url":"https://www.cnnbrasil.com.br/educacao/eleicoes-conflitos-e-mais-quais-temas-podem-cair-na-redacao-do-enem/"},{"label":"Folha · temas indicados por cursinhos","url":"https://www1.folha.uol.com.br/educacao/2026/10/cursinhos-apostam-em-ia-e-protecao-de-criancas-para-redacao-do-enem-confira-temas.shtml"}]
+    },
+    {
+      "id": "clima-justica",
+      "year": "Treino · possibilidade para 2026",
+      "title": "Desafios para a adaptação climática e a proteção de populações vulneráveis no Brasil",
+      "prompt": "Analise obstáculos para reduzir os impactos desiguais de eventos climáticos extremos e proponha medidas de adaptação que considerem território, moradia, saúde e infraestrutura.",
+      "label": "Aposta de preparação · não oficial",
+      "materials": [],
+      "sources": [{"label":"CNN Brasil · adaptação climática e justiça ambiental","url":"https://www.cnnbrasil.com.br/educacao/eleicoes-conflitos-e-mais-quais-temas-podem-cair-na-redacao-do-enem/"},{"label":"Folha · temas indicados por cursinhos","url":"https://www1.folha.uol.com.br/educacao/2026/10/cursinhos-apostam-em-ia-e-protecao-de-criancas-para-redacao-do-enem-confira-temas.shtml"}]
+    },
+    {
+      "id": "integridade-informacao",
+      "year": "Treino · possibilidade para 2026",
+      "title": "Caminhos para fortalecer a integridade da informação e a cidadania digital no Brasil",
+      "prompt": "Discuta efeitos da desinformação e de conteúdos digitais manipulados sobre a vida coletiva e a participação cidadã, articulando medidas de prevenção e responsabilização.",
+      "label": "Aposta de preparação · não oficial",
+      "materials": [],
+      "sources": [{"label":"CNN Brasil · democracia, informação e cidadania digital","url":"https://www.cnnbrasil.com.br/educacao/eleicoes-conflitos-e-mais-quais-temas-podem-cair-na-redacao-do-enem/"}]
+    },
+    {
+      "id": "ia-trabalho",
+      "year": "Treino · possibilidade para 2026",
+      "title": "Impactos da inteligência artificial na formação e no futuro do trabalho no Brasil",
+      "prompt": "Analise como as transformações provocadas pela inteligência artificial podem ampliar oportunidades ou desigualdades na educação e no trabalho, propondo formas de inclusão.",
+      "label": "Aposta de preparação · não oficial",
+      "materials": [],
+      "sources": [{"label":"CNN Brasil · trabalho, educação e inteligência artificial","url":"https://www.cnnbrasil.com.br/educacao/eleicoes-conflitos-e-mais-quais-temas-podem-cair-na-redacao-do-enem/"},{"label":"Folha · temas indicados por cursinhos","url":"https://www1.folha.uol.com.br/educacao/2026/10/cursinhos-apostam-em-ia-e-protecao-de-criancas-para-redacao-do-enem-confira-temas.shtml"}]
+    },
+    {
+      "id": "inclusao-acessibilidade",
+      "year": "Treino · possibilidade para 2026",
+      "title": "Barreiras à inclusão e à acessibilidade das pessoas com deficiência no Brasil",
+      "prompt": "Examine obstáculos à participação plena das pessoas com deficiência na escola, no trabalho e nos espaços públicos e indique caminhos para efetivar direitos e acessibilidade.",
+      "label": "Aposta de preparação · não oficial",
+      "materials": [],
+      "sources": [{"label":"Folha · temas indicados por cursinhos","url":"https://www1.folha.uol.com.br/educacao/2026/10/cursinhos-apostam-em-ia-e-protecao-de-criancas-para-redacao-do-enem-confira-temas.shtml"}]
+    },
+    {
+      "id": "saude-mental-escola",
+      "year": "Treino · possibilidade para 2026",
+      "title": "Desafios para promover a saúde mental de adolescentes no Brasil",
+      "prompt": "Discuta fatores sociais e institucionais que afetam a saúde mental de adolescentes e proponha ações de prevenção, acolhimento e acesso a cuidado adequado.",
+      "label": "Aposta de preparação · não oficial",
+      "materials": [],
+      "sources": [{"label":"CNN Brasil · proteção de crianças e adolescentes em contextos digitais","url":"https://www.cnnbrasil.com.br/educacao/eleicoes-conflitos-e-mais-quais-temas-podem-cair-na-redacao-do-enem/"},{"label":"Folha · temas indicados por cursinhos","url":"https://www1.folha.uol.com.br/educacao/2026/10/cursinhos-apostam-em-ia-e-protecao-de-criancas-para-redacao-do-enem-confira-temas.shtml"}]
+    }
+  ]
+}
+
