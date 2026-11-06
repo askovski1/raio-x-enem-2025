@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/brand.css">
   <link rel="stylesheet" href="/stimuli.css">
 </head>
 <body>
   <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="#" aria-label="Início do simulado"><span class="brand-mark">e</span><span>estuda<span class="brand-dot">.</span></span></a>
-    <div class="top-actions"><span class="edition">ENEM <b>2025</b></span><button id="themeToggle" class="icon-button" aria-label="Alternar tema" title="Alternar tema"><span id="themeGlyph">◐</span></button></div>
+    <div class="top-actions"><nav class="site-nav" aria-label="Seções do site"><a class="site-nav-link active" href="/">Questões</a><a class="site-nav-link" href="/redacao">Redação</a></nav><span class="edition">ENEM <b>2025</b></span><button id="themeToggle" class="icon-button" aria-label="Alternar tema" title="Alternar tema"><span id="themeGlyph">◐</span></button></div>
   </header>
   <main class="shell">
     <section class="intro"><div><p class="eyebrow"><span class="live-dot"></span> SIMULADO OFICIAL</p><h1>Seu próximo passo<br><em>começa aqui.</em></h1><p class="intro-copy">Duas provas, no seu ritmo. Responda, acompanhe seu progresso e veja a correção ao concluir cada questão.</p></div><div class="hero-stamp" aria-hidden="true"><span>INEP</span><strong>25</strong><i>•</i></div></section>
@@ -42,3 +43,4 @@
   <script src="/app.js" defer></script>
 </body>
 </html>
+
