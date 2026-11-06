@@ -1,43 +1,102 @@
-# Simulado ENEM 2025
+<div align="center">
 
-## Publicar na web
+# 📚 Simulado ENEM 2025
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Faskovski1%2Fraio-x-enem-2025)
+**Resolva as questões oficiais, veja o gabarito na hora e treine sua redação com correção por IA.**
 
-Clique no botão, conecte sua conta GitHub ao Render e aprove a criação do serviço. O Render compila e inicia o servidor Node; ao concluir, use a URL `onrender.com` exibida no painel. O arquivo `render.yaml` configura o serviço e sua verificação de saúde. Para evitar implantações sem sua aprovação em cada conta que usar o botão, as novas versões devem ser implantadas pelo painel do Render.
+[![Abrir o site](https://img.shields.io/badge/🚀_Abrir_o_site-questoesenem2025.onrender.com-4f46e5?style=for-the-badge)](https://questoesenem2025.onrender.com)
 
-O GitHub Pages sozinho não executa o endpoint `/api/answer`, necessário para carregar e corrigir as questões.
+![Questões](https://img.shields.io/badge/questões-180-22c55e?style=flat-square)
+![Provas](https://img.shields.io/badge/provas-Dia_1_e_Dia_2-3b82f6?style=flat-square)
+![Redação](https://img.shields.io/badge/redação-5_competências-f59e0b?style=flat-square)
+![Node](https://img.shields.io/badge/node-≥_20-339933?style=flat-square)
 
-## Executar
+</div>
 
-Com Node.js 20 ou superior, abra um terminal nesta pasta e execute:
+---
+
+## ✨ O que você encontra
+
+| 📝 Questões | ✍️ Redação |
+|---|---|
+| 180 questões dos cadernos oficiais, separadas por dia, área e caderno | Tema oficial de 2025 e propostas de treino para 2026 |
+| Responda, confirme e veja na hora se acertou, com o gabarito oficial | Resumo dos textos motivadores e link para a proposta completa |
+| Figuras, gráficos, tabelas e alternativas ilustradas | Editor com contador de palavras e rascunho salvo no seu navegador |
+| Modo claro e escuro, progresso salvo no seu navegador | Correção por IA nas 5 competências do ENEM (0 a 1.000) |
+
+## 🧭 Como usar
+
+1. **Abra o site** e escolha o dia da prova.
+2. **Responda as questões**: confirme cada resposta para ver se acertou.
+3. **Vá em Redação**, escolha um tema, escreva seu texto e envie para a correção.
+
+## 🤖 Como funciona a correção da redação
+
+Você recebe uma leitura completa do texto:
+
+- 🎯 **Nota estimada** de 0 a 1.000, somando as 5 competências (faixas de 40 em 40, até 200 cada)
+- 🔎 **Análise de cada competência**, com o trecho observado e o próximo passo
+- 💪 **O que já funciona** e **prioridades de revisão**
+- 🧩 **Revisão da proposta de intervenção**
+
+> ⚠️ **É uma estimativa para estudo.** Não é nota oficial. O ENEM usa dois avaliadores humanos independentes e a nota real pode ser diferente. Leia também a [Cartilha do Participante](https://www.gov.br/inep/pt-br/centrais-de-conteudo/acervo-linha-editorial/publicacoes-institucionais/avaliacoes-e-exames-da-educacao-basica/redacao-do-enem-2025-cartilha-do-a-participante/).
+
+## 🔒 Privacidade
+
+- Sua redação **só é enviada depois que você marca o consentimento**.
+- O site **não guarda** o texto enviado. O rascunho fica apenas no seu navegador.
+- A correção é feita pelo Google (Gemini). No plano gratuito, o Google pode usar o conteúdo enviado para melhorar seus produtos, então **não coloque dados pessoais** na redação.
+- Para evitar abuso, há um limite de avaliações por pessoa em um intervalo de tempo.
+
+## 🩺 Aviso sobre o material
+
+As questões foram transcritas dos cadernos oficiais e podem ter pequenos erros de transcrição. Em caso de dúvida, confira no caderno original do Inep. A parte de espanhol do Dia 1 não foi incluída.
+
+---
+
+## 💻 Rodar no seu computador
+
+Precisa do [Node.js](https://nodejs.org) 20 ou superior. Na pasta do projeto:
 
 ```sh
 npm start
 ```
 
-Depois acesse `http://127.0.0.1:4173`. Também é possível iniciar com `node server.mjs`. Para usar outra porta, defina a variável `PORT`.
+Depois abra `http://127.0.0.1:4173`. Para usar outra porta, defina a variável `PORT`.
 
-Para publicar o simulador em outra hospedagem, use um serviço que execute aplicações Node.js.
+## ☁️ Publicar o seu próprio site
 
-## Arquivos
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Faskovski1%2Fraio-x-enem-2025)
 
-- `questions.json`: transcrições e metadados dos 180 números de questão, separados por dia, área e caderno. O caderno azul do Dia 1 está configurado para inglês nas questões de língua estrangeira; questões podem apontar para figuras locais em `images[].src`, alternativas ilustradas em `choiceImages` e textos compartilhados em `groupId`.
-- `assets/`: 121 imagens locais extraídas ou recortadas dos PDFs oficiais, com figuras, gráficos, tabelas e alternativas ilustradas. A revisão visual encontrou materiais em 17 questões do Dia 1 e 49 do Dia 2.
-- `image-review-manifest.json`: registro das páginas revisadas e das questões com material visual.
-- `server-private/answer-keys.json`: gabaritos oficiais usados exclusivamente pelo servidor.
-- `essay-themes.json`: tema oficial de 2025, resumos didáticos dos seis textos motivadores e propostas de treino para 2026 com links às fontes.
-- `server.mjs`: servidor de arquivos, endpoint de correção (`POST /api/answer`) e avaliação de redação (`POST /api/essay/evaluate`).
-- `index.html`, `styles.css` e `app.js`: interface responsiva em português, temas claro/escuro, progresso local e confirmação explícita antes de corrigir cada resposta.
-- `redacao.html`, `redacao.css` e `redacao.js`: oficina de redação, rascunho local, consentimento de envio e devolutiva estruturada nas cinco competências.
+1. Clique no botão, conecte seu GitHub ao Render e aprove a criação do serviço.
+2. Quando terminar, use o endereço `onrender.com` que aparece no painel.
+3. As novas versões são publicadas manualmente pelo painel do Render (**Manual Deploy**).
 
-## Ativar avaliação de redação por IA
+> O GitHub Pages sozinho **não funciona**, porque o site precisa de um servidor Node.js.
 
-A avaliação exige uma chave da API da OpenAI, mantida somente como variável secreta no servidor. No Render, abra o serviço `questoesenem2025`, acesse **Environment** e adicione `OPENAI_API_KEY`. Opcionalmente, defina `OPENAI_MODEL` para escolher outro modelo compatível; o padrão é `gpt-6.1-terra`. Salve e aguarde o novo deploy. Nunca coloque a chave nos arquivos do site, no GitHub ou no navegador. As chamadas consomem créditos da API conforme o uso. Sem a chave, a oficina e os temas funcionam, mas a avaliação permanece desativada.
+### Ativar a correção de redação
 
-Cada envio exige consentimento explícito, é enviado do servidor ao provedor de IA e não é persistido pelo aplicativo. O rascunho fica apenas no armazenamento local do navegador. A correção é uma estimativa orientativa: não representa uma nota oficial nem substitui os dois avaliadores humanos do Inep. O endpoint limita o tamanho da redação e a frequência de avaliações por endereço de rede.
+1. Crie uma chave gratuita no [Google AI Studio](https://aistudio.google.com) (botão **Get API key**).
+2. No Render, abra seu serviço, vá em **Environment** e adicione a variável `GEMINI_API_KEY` com a chave.
+3. Salve e aguarde o novo deploy.
 
-## Limite do material transcrito
+Se quiser trocar o modelo, crie também a variável `GEMINI_MODEL` (o padrão é `gemini-3.8-flash`).
 
-O texto OCR recebido para o Dia 1 substitui a extração truncada anterior; os anexos que ficaram disponíveis nesta sessão eram cópias do caderno azul. O gabarito do Dia 2 foi comparado com os 90 valores colados pelo usuário e não apresentou divergências. As páginas com material visual dos dois cadernos foram revisadas e seus elementos foram vinculados às questões correspondentes. A parte em espanhol do Dia 1 foi excluída, conforme solicitado. O OCR ainda pode conter erros de transcrição; o simulador não inventa alternativas nem imagens para preencher lacunas.
+> 🔐 Nunca coloque a chave nos arquivos do site, no GitHub ou no navegador. Sem a chave, as questões e os temas funcionam normalmente, mas a correção da redação fica desativada. A camada gratuita tem limites de uso por minuto e por dia.
 
+---
+
+## 🗂️ O que tem em cada arquivo
+
+| Arquivo | Para que serve |
+|---|---|
+| `server.mjs` | Servidor do site, conferência das respostas e correção da redação |
+| `index.html`, `app.js`, `styles.css` | Página das questões |
+| `redacao.html`, `redacao.js`, `redacao.css` | Página da oficina de redação |
+| `brand.css`, `stimuli.css` | Visual compartilhado e textos de apoio das questões |
+| `questions.json`, `stimuli.json` | Questões e textos de apoio |
+| `essay-themes.json` | Temas de redação, resumos dos textos motivadores e fontes |
+| `assets/` | Imagens extraídas dos cadernos oficiais |
+| `image-review-manifest.json` | Registro das questões com material visual |
+| `server-private/answer-keys.json` | Gabaritos, usados só pelo servidor |
+| `render.yaml` | Configuração de publicação no Render |
