@@ -2,18 +2,20 @@
 
 ## Executar
 
-Com Node.js 18 ou superior, abra um terminal nesta pasta e execute:
+Com Node.js 20 ou superior, abra um terminal nesta pasta e execute:
 
 ```sh
-node server.mjs
+npm start
 ```
 
-Depois acesse `http://127.0.0.1:4173`. Para usar outra porta, defina a variável `PORT`.
+Depois acesse `http://127.0.0.1:4173`. Também é possível iniciar com `node server.mjs`. Para usar outra porta, defina a variável `PORT`.
+
+Para publicar o simulador, use uma hospedagem que execute aplicações Node.js. O GitHub Pages não executa o endpoint `/api/answer` usado para validar as respostas.
 
 ## Arquivos
 
 - `questions.json`: transcrições e metadados dos 180 números de questão, separados por dia, área e caderno. O caderno azul do Dia 1 está configurado para inglês nas questões de língua estrangeira; questões podem apontar para figuras locais em `images[].src`, alternativas ilustradas em `choiceImages` e textos compartilhados em `groupId`.
-- `assets/`: 106 imagens extraídas ou recortadas dos PDFs oficiais, com figuras, gráficos, tabelas e alternativas ilustradas. A revisão visual encontrou materiais em 17 questões do Dia 1 e 49 do Dia 2.
+- `assets/`: 121 imagens locais extraídas ou recortadas dos PDFs oficiais, com figuras, gráficos, tabelas e alternativas ilustradas. A revisão visual encontrou materiais em 17 questões do Dia 1 e 49 do Dia 2.
 - `image-review-manifest.json`: registro das páginas revisadas e das questões com material visual.
 - `server-private/answer-keys.json`: gabaritos oficiais usados exclusivamente pelo servidor.
 - `server.mjs`: servidor de arquivos e endpoint de correção (`POST /api/answer`).
